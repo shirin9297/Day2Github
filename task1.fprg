@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-11 07:03:39 "/>
+        <attribute name="created" value="QWRtaW47REVTS1RPUC05TE8ySUk2OzIwMjItMDYtMTE7IjA2OjEyOjA5ICI7MjcyMQ=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC05TE8ySUk2OzIwMjItMDYtMTE7IjA3OjAzOjM5ICI7MTsyODMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a1, a2, a3, average" type="Real" array="False" size=""/>
+            <output expression="&quot;1.notu giriniz&quot;" newline="True"/>
+            <input variable="a1"/>
+            <output expression="&quot;2.notu giriniz&quot;" newline="True"/>
+            <input variable="a2"/>
+            <output expression="&quot;3.notu giriniz&quot;" newline="True"/>
+            <input variable="a3"/>
+            <assign variable="average" expression="(a1+a2+a3)/3"/>
+            <if expression="average&gt;0 &amp;&amp; average&lt;45">
+                <then>
+                    <output expression="&quot;zayif&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="average&gt;45 &amp;&amp; average&lt;70">
+                <then>
+                    <output expression="&quot;iyi&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="average&gt;70 &amp;&amp; average&lt;100">
+                <then>
+                    <output expression="&quot;pekiyi&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;average:&quot; &amp; average" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
